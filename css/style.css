@@ -1,0 +1,126 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@font-face {
+  font-family: "FuturaMediumItalicBT";
+  src: url(../fonts/FuturaMediumItalicBT.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.first-section {
+  width: 100%;
+  height: 130vh;
+  background-image: url(../img/Image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.burger {
+  vertical-align: center;
+}
+.nike-logo {
+  position: absolute;
+  left: 50%;
+  top: 7.5vh;
+  width: 10VW;
+}
+.nike-logo img {
+  width: 5vw;
+}
+.navbar-rightIcons {
+  margin-left: 4vw;
+}
+.line1 {
+  position: absolute;
+  top: 10vw;
+}
+.line1 img {
+  width: 100vw;
+}
+.poluCircle {
+  position: absolute;
+  top: 20vw;
+  z-index: 0;
+}
+.poluCircle img {
+  position: relative;
+}
+.poluCircle .red {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 360px;
+  top: 0%;
+  border: 1px solid #ffffff;
+}
+.poluCircle .blue {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 360px;
+  top: 0%;
+  border: 1px solid #ffffff;
+  background-color: blue;
+  top: 20%;
+  left: 62%;
+}
+.poluCircle .black {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 360px;
+  top: 0%;
+  border: 1px solid #ffffff;
+  background-color: black;
+  top: 50%;
+  left: 92.5%;
+}
+.poluCircle .yellow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 360px;
+  top: 0%;
+  border: 1px solid #ffffff;
+  background-color: black;
+  top: 75%;
+  left: 62.5%;
+  background-color: yellow;
+}
+.poluCircle .purple {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 360px;
+  top: 0%;
+  border: 1px solid #ffffff;
+  background-color: purple;
+  top: 96%;
+}
+.first-snickers {
+  position: absolute;
+  margin-top: 30vh;
+  z-index: 1;
+}
+.first-snickers img {
+  width: 100%;
+}
+.background-text {
+  position: absolute;
+  top: 40vh;
+  left: 0vw;
+}
+.snickers-tittle {
+  margin-top: 40vh;
+  margin-left: 7vw;
+  font-family: FuturaMediumItalicBT;
+  font-size: 3.5vw;
+  letter-spacing: .75vw;
+  color: white;
+  font-weight: 700;
+}
