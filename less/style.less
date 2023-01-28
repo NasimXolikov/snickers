@@ -1,120 +1,1308 @@
-*{
- box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
 
 @font-face {
     // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
-    font-family: "FuturaMediumItalicBT"; 
+    font-family: "FuturaMediumItalicBT";
     // адрес шрифта и тип 
-    src: url(../fonts/FuturaMediumItalicBT.ttf) format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-    } 
+    src: url(../fonts/FuturaMediumItalicBT.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
 
 
 
+body {
+    overflow-x: hidden;
+    background-color: black;
+}
 
-
-.first-section{
+.first-section {
     width: 100%;
-    height: 130vh;
+    height: 152vh;
     background-image: url(../img/Image.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.burger{
+
+.burger {
     vertical-align: center;
 }
 
-.nike-logo{
+.nike-logo {
     position: absolute;
     left: 50%;
     top: 7.5vh;
     width: 10VW;
-img{
-    width: 5vw;
+
+    img {
+        width: 5vw;
+    }
 }
-}
-.navbar-rightIcons{
+
+.navbar-rightIcons {
     margin-left: 4vw;
 }
 
-.line1{
- position: absolute;
- top: 10vw;
+.line1 {
+    position: absolute;
+    top: 10vw;
 
- img{
-    width: 100vw;
+    img {
+        width: 100vw;
 
- }
+    }
 }
 
-.poluCircle{
+.poluCircle {
     position: absolute;
     top: 20vw;
-    z-index: 0;
-img{
-    position: relative;
-}
-    .red{
+    z-index: 3;
+
+    img {
+        width: 10vw;
+        position: relative;
+    }
+
+    .red {
         position: absolute;
-        width: 20px;
-        height: 20px;
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
         background-color: red;
         border-radius: 360px;
         top: 0%;
-        border: 1px solid white
+        border: 1px solid white solid white;
+        display: block;
+
     }
-    .blue{
-     .red;
-     background-color: blue;
-     top: 20%;
-     left: 62%;
+
+    .blue {
+        .red;
+        background-color: blue;
+        top: 20%;
+        left: 62%;
     }
-    .black{
+
+    .black {
         .red;
         background-color: black;
         top: 50%;
         left: 92.5%;
     }
-    .yellow{
+
+    .yellow {
         .red;
         background-color: black;
         top: 75%;
         left: 62.5%;
-        background-color:yellow;
+        background-color: yellow;
     }
-    .purple{
+
+    .purple {
         .red;
         background-color: purple;
         top: 96%;
-       
     }
 }
 
-.first-snickers{
+.first-snickers {
     position: absolute;
     margin-top: 30vh;
-    img{
-        width: 100%;
+
+    img {
+        width: 45vw;
     }
-    z-index: 1;
+
+    z-index: 2;
 }
 
-.background-text{
+.background-text {
     position: absolute;
     top: 40vh;
     left: 0vw;
+    z-index: 0;
+    width: 100vw;
+
+    img {
+        width: 70%;
+    }
 }
 
-.snickers-tittle{
+.snickers-tittle {
     margin-top: 40vh;
     margin-left: 7vw;
     font-family: FuturaMediumItalicBT;
-    font-size: 3.5vw;
+    font-size: 3vw;
     letter-spacing: .75vw;
     color: white;
     font-weight: 700;
+}
+
+
+.card-of-cnickers1 {
+    width: 100%;
+    height: 30vh;
+    margin-top: 40vh;
+    border: 2px solid white;
+
+    img {
+        width: 80%;
+        margin-top: -7.5vh;
+        margin-left: 1vw;
+
+    }
+
+    div {
+        color: white;
+        margin-left: 2vw;
+        margin-top: 5vh;
+        font-size: 1.5vw;
+    }
+
+    &:hover {
+        img {
+            width: 80%;
+            margin-top: -10vh;
+            margin-left: 2vw;
+            transition: 500ms ease-in-out;
+            transform: scale(1.1);
+        }
+
+        div {
+            color: white;
+            margin-left: 2vw;
+            margin-top: 7.5vh;
+            font-size: 1.75vw;
+            transition: 500ms ease-in-out;
+
+        }
+    }
+
+    &:not(:hover) {
+        img {
+            width: 80%;
+            margin-top: -7.5vh;
+            margin-left: 1vw;
+            transition: 500ms ease-in-out
+        }
+
+        div {
+            color: white;
+            margin-left: 2vw;
+            margin-top: 5vh;
+            font-size: 1.5vw;
+            transition: 500ms ease-in-out;
+
+        }
+    }
+
+}
+
+.card-of-cnickers2 {
+    .card-of-cnickers1;
+
+    img {
+        margin-top: -4vh;
+    }
+
+    &:not(:hover) {
+        img {
+            width: 80%;
+            margin-top: -4vh;
+            margin-left: 1vw;
+            transition: 500ms ease-in-out
+        }
+
+        div {
+            color: white;
+            margin-left: 2vw;
+            margin-top: 5vh;
+            font-size: 1.5vw;
+            transition: 500ms ease-in-out;
+
+        }
+    }
+
+}
+
+.card-of-cnickers3 {
+    .card-of-cnickers1;
+
+    img {
+        margin-top: -4vh;
+    }
+
+    &:not(:hover) {
+        img {
+            width: 80%;
+            margin-top: -4vh;
+            margin-left: 1vw;
+            transition: 500ms ease-in-out
+        }
+
+        div {
+            color: white;
+            margin-left: 2vw;
+            margin-top: 5vh;
+            font-size: 1.5vw;
+            transition: 500ms ease-in-out;
+
+        }
+    }
+
+}
+
+.rectengle {
+    position: absolute;
+    top: 145vh;
+
+    img {
+        width: 100vw;
+
+    }
+}
+
+
+
+
+
+
+
+
+////////////////////////second section
+
+.second-section {
+    width: 100vw;
+    height: 1000px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.second-section-title {
+    margin-top: 30vh;
+
+    .title-text {
+        text-align: center;
+        font-size: 40px;
+        color: white;
+
+
+    }
+
+    .title-text-s {
+        text-align: center;
+        font-size: 40px;
+        background: #FFFFFF;
+        background: linear-gradient(to top right, #FFFFFF 52%, #FF0000 0%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+
+    }
+}
+
+.text-underTitle {
+    margin-top: 10vh;
+
+    img {
+        position: absolute;
+        left: 0%;
+        z-index: 1;
+        width: 35vw;
+    }
+
+    .underTitle-line {
+        z-index: 0;
+    }
+}
+
+.text {
+    color: white;
+    font-size: 1.2vw;
+    text-align: center;
+    line-height: 7.5vh;
+}
+
+
+
+//////////////////third section
+
+.best-sellers {
+    margin-top: 20vh;
+    text-align: center;
+    font-weight: 600;
+    font-size: 4vw;
+    background: #FFFFFF;
+    background: linear-gradient(to top right, #FFFFFF 50%, #FF0000 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    img {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+    }
+}
+
+.third-section-imgCont {
+    margin-top: 20vh;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+    img {
+        width: 100%;
+    }
+}
+
+
+
+//////////////////forth-section
+
+.forth-section-title-cont {
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.listOfsnick1 {
+    position: relative;
+    margin-top: 20vh;
+    text-align: center;
+
+    img {
+        width: 80%;
+    }
+
+    p {
+        font-size: 1.4vw;
+        color: white;
+        margin-top: 3vh;
+    }
+}
+
+.listOfsnick2 {
+    .listOfsnick1;
+    margin-top: 16vh;
+
+    p {
+
+        margin-top: 2.5vh;
+    }
+
+}
+
+.listOfsnick3 {
+    .listOfsnick1;
+    margin-top: 30vh;
+
+    p {
+
+        margin-top: 2.5vh;
+    }
+
+}
+
+
+
+
+
+///////////////////fiveth section
+
+.fiveth-section {
+    margin-top: 20vh;
+}
+
+.fiveth-section-contImg {
+    text-align: right;
+
+    img {
+        display: block;
+        width: 110%;
+    }
+}
+
+
+.fiveth-section-cont-secondPart {
+    .fiveth-section-title {
+        font-size: 4vw;
+        margin-top: 15vh;
+        color: white;
+    }
+
+    p {
+        color: white;
+        margin-top: 5vh;
+        font-size: 1.5vw;
+    }
+
+
+    .btn-exoler {
+        margin-top: 5vh;
+        border-radius: 50px;
+        width: 15vw;
+        height: 10vh;
+        border: 1px solid white solid white;
+        color: white;
+        font-size: 1.5vw;
+
+        &:hover {
+            img {
+                margin-left: 5px;
+                transition: 100ms ease;
+                transform: scale(1.2);
+
+            }
+        }
+
+        &:not(:hover) {
+            img {
+                margin-left: 0px;
+                transition: 100ms ease;
+
+            }
+        }
+
+    }
+}
+
+
+////////////brands
+
+.brands-cont {
+    text-align: center;
+    align-items: center;
+    height: 10vh;
+    align-items: center;
+    display: flex;
+
+
+
+}
+
+.contofallBrands {
+    margin-top: 20vh;
+    width: 100%;
+    height: 10vh;
+
+}
+
+
+
+
+///////////////////sixth-section
+
+.sixth-section {
+    margin-top: 50vh;
+}
+
+.sixth-section-title {
+    font-size: 4vw;
+    color: white;
+    line-height: 10vh;
+}
+
+.sixth-section-cont {
+    p {
+        color: white;
+        margin-top: 5vh;
+    }
+}
+
+.btn-exoler2 {
+    margin-top: 5vh;
+    border-radius: 50px;
+    width: 10vw;
+    height: 5vh;
+    border: 1px solid white solid white;
+    color: white;
+    font-size: 1.2vw;
+
+    &:hover {
+        img {
+            margin-left: 5px;
+            transition: 100ms ease;
+            transform: scale(1.2);
+
+        }
+    }
+
+    &:not(:hover) {
+        img {
+            margin-left: 0px;
+            transition: 100ms ease;
+
+        }
+    }
+
+}
+
+
+.sixth-section-secondCont {
+    position: relative;
+}
+
+.redBall {
+    position: absolute;
+    width: 100%;
+    top: -35vh;
+    z-index: 0;
+}
+
+.sixth1 {
+    position: absolute;
+    width: 15vw;
+    left: 10%;
+
+    top: -10%;
+    z-index: 1;
+}
+
+.sixth2 {
+    position: absolute;
+    width: 20vw;
+    top: -10%;
+    left: 50%;
+    z-index: 1;
+}
+
+.sixth3 {
+    position: absolute;
+    width: 15vw;
+    top: 30vh;
+    right: 20%;
+    z-index: 1;
+}
+
+
+
+
+///////////////////seventh-section
+
+.seventh-section {
+    margin-top: 60vh;
+}
+
+.seventh-section-first-cont {
+    text-align: center;
+
+    img {
+        position: relative;
+        z-index: 3;
+    }
+}
+
+.seventh-section-title {
+    color: white;
+    font-size: 4vw;
+
+    span {
+        color: red;
+    }
+
+}
+
+.seventh-section-second-cont {
+    p {
+        color: white;
+        margin-top: 5vh;
+    }
+
+    .btn-exoler3 {
+        .btn-exoler2;
+        width: 35vw;
+        border: 1px solid white;
+    }
+}
+
+
+
+
+///////////////////eigth-section-cont
+
+
+.eigth-section {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    position: relative;
+}
+
+.eigth-section-cont {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 40vh;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 20vh;
+
+    padding-top: 5vh;
+    padding-left: 2.5vh;
+
+}
+
+.card-title {
+    font-size: 3vw;
+    color: white;
+}
+
+.btn-exoler4 {
+    .btn-exoler2;
+    width: 10vw;
+    border: 1px solid white;
+    height: 7.5vh;
+}
+
+.banner-img-cont {
+    display: flex;
+    height: 40vh;
+    align-items: center;
+
+    img {
+        width: 80%;
+        margin-top: -10vh;
+    }
+}
+
+
+.lastSnick {
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    z-index: 1;
+}
+
+
+.benefis-section {
+    height: 60vh;
+    color: white;
+
+}
+
+
+
+.first-icon-cont {
+    margin-top: 30vh;
+    text-align: center;
+
+    p {
+        text-align: left;
+    }
+
+}
+
+.free-del-cont {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+
+///////////////////////////fooooter
+footer {
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+
+.footer-firstPart-con {
+    text-align: center;
+}
+
+.footer-title {
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    margin-top: -5vh;
+}
+
+.footer-img {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.copywright {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.link-title {
+    color: white;
+    font-size: 1.6vw;
+    font-style: italic;
+    margin-bottom: 5vh;
+}
+
+.link-p {
+    color: white;
+}
+
+.social {
+    text-align: right;
+
+    img {
+        margin-right: 3vw;
+        width: 2vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////media
+
+
+
+@media only screen and (min-width: 1600px) {
+    .first-snickers {
+        position: absolute;
+        margin-top: 30vh;
+
+        img {
+            width: 35vw;
+        }
+
+        z-index: 2;
+    }
+
+
+    .text-underTitle {
+        margin-top: 10vh;
+
+        img {
+            position: absolute;
+            left: 0%;
+            z-index: 1;
+            width: 30vw;
+        }
+
+        .underTitle-line {
+            z-index: 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 0px)and (max-width:576px) {
+    body {
+        overflow-x: hidden;
+    }
+    .poluCircle {
+
+
+        position: absolute;
+        top: 40vh;
+        left:40%;
+        z-index: 3;
+        transform: rotate(90deg);
+
+        img {
+            width: 20vw;
+            position: relative;
+        }
+
+        .red {
+            position: absolute;
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+            background-color: red;
+            border-radius: 360px;
+            top: 0%;
+            border: 1px solid white solid white;
+            display: block;
+
+        }
+
+        .blue {
+            .red;
+            background-color: blue;
+            top: 20%;
+            left: 50%;
+        }
+
+        .black {
+            .red;
+            background-color: black;
+            top: 50%;
+            left: 80%;
+        }
+
+        .yellow {
+            .red;
+            background-color: black;
+            top: 75%;
+            left: 50%;
+            background-color: yellow;
+        }
+
+        .purple {
+            .red;
+            background-color: purple;
+            top: 90%;
+        }
+    }
+
+
+    .background-text {
+        position: absolute;
+        top: 25vh;
+        left: 0vw;
+        z-index: 0;
+        width: 100vw;
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+    .first-snickers {
+        position: absolute;
+        margin-top: 10vh;
+
+        img {
+            width: 70vw;
+        }
+
+        z-index: 2;
+    }
+
+    .snickers-tittle {
+        margin-top: 35vh;
+        margin-left: 20vw;
+        font-family: FuturaMediumItalicBT;
+        font-size: 5vw;
+        letter-spacing: .75vw;
+        color: white;
+        font-weight: 700;
+    }
+
+
+    .card-of-cnickers1 {
+        width: 100%;
+        height: 30vh;
+        margin-top: 25vh;
+        border: 2px solid white;
+    
+        img {
+            width: 80%;
+            margin-top: -7.5vh;
+            margin-left: 1vw;
+    
+        }
+    
+        div {
+            color: white;
+            margin-left: 2vw;
+            margin-top: 5vh;
+            font-size: 1.5vw;
+        }
+    
+        &:hover {
+            img {
+                width: 80%;
+                margin-top: -10vh;
+                margin-left: 2vw;
+                transition: 500ms ease-in-out;
+                transform: scale(1.1);
+            }
+    
+            div {
+                color: white;
+                margin-left: 2vw;
+                margin-top: 7.5vh;
+                font-size: 1.75vw;
+                transition: 500ms ease-in-out;
+    
+            }
+        }
+    
+        &:not(:hover) {
+            img {
+                width: 80%;
+                margin-top: -7.5vh;
+                margin-left: 1vw;
+                transition: 500ms ease-in-out
+            }
+    
+            div {
+                color: white;
+                margin-left: 2vw;
+                margin-top: 5vh;
+                font-size: 1.5vw;
+                transition: 500ms ease-in-out;
+    
+            }
+        }
+    
+    }
+    .card-of-cnickers2 {
+        width: 100%;
+        height: 30vh;
+        margin-top: 10vh;
+        border: 2px solid white;
+    
+        img {
+            width: 80%;
+            margin-top: -7.5vh;
+            margin-left: 1vw;
+    
+        }
+    
+        div {
+            color: white;
+            margin-left: 2vw;
+            margin-top: 5vh;
+            font-size: 1.5vw;
+        }
+    
+        &:hover {
+            img {
+                width: 80%;
+                margin-top: -10vh;
+                margin-left: 2vw;
+                transition: 500ms ease-in-out;
+                transform: scale(1.1);
+            }
+    
+            div {
+                color: white;
+                margin-left: 2vw;
+                margin-top: 7.5vh;
+                font-size: 1.75vw;
+                transition: 500ms ease-in-out;
+    
+            }
+        }
+    
+        &:not(:hover) {
+            img {
+                width: 80%;
+                margin-top: -7.5vh;
+                margin-left: 1vw;
+                transition: 500ms ease-in-out
+            }
+    
+            div {
+                color: white;
+                margin-left: 2vw;
+                margin-top: 5vh;
+                font-size: 1.5vw;
+                transition: 500ms ease-in-out;
+    
+            }
+        }
+    
+    }
+
+    .card-of-cnickers3 {
+        width: 100%;
+        height: 30vh;
+        margin-top: 10vh;
+        border: 2px solid white;
+    
+        img {
+            width: 80%;
+            margin-top: -7.5vh;
+            margin-left: 1vw;
+    
+        }
+    
+        div {
+            color: white;
+            margin-left: 2vw;
+            margin-top: 5vh;
+            font-size: 1.5vw;
+        }
+    
+        &:hover {
+            img {
+                width: 80%;
+                margin-top: -10vh;
+                margin-left: 2vw;
+                transition: 500ms ease-in-out;
+                transform: scale(1.1);
+            }
+    
+            div {
+                color: white;
+                margin-left: 2vw;
+                margin-top: 7.5vh;
+                font-size: 1.75vw;
+                transition: 500ms ease-in-out;
+    
+            }
+        }
+    
+        &:not(:hover) {
+            img {
+                width: 80%;
+                margin-top: -7.5vh;
+                margin-left: 1vw;
+                transition: 500ms ease-in-out
+            }
+    
+            div {
+                color: white;
+                margin-left: 2vw;
+                margin-top: 5vh;
+                font-size: 1.5vw;
+                transition: 500ms ease-in-out;
+    
+            }
+        }
+    
+    }
+
+
+
+
+
+    .nike-logo {
+        position: absolute;
+        left: 40%;
+        top: 7.5vh;
+        width: 40VW;
+    
+        img {
+            width: 20vw;
+        }
+    }
+    
+    .first-section{
+        height: 200vh;
+    }
+
+    .rectengle {
+        position: absolute;
+        top: 199vh;
+    
+        img {
+            width: 100vw;
+    
+        }
+    }
+    
+
+    .third-section-imgCont {
+        margin-top: 20vh;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    
+        img {
+            width: 100%;
+        }
+    }
+
+    .text-underTitle {
+        margin-top: 10vh;
+        z-index: 0;
+    
+        img {
+            position: absolute;
+            z-index: 1;
+            width: 60vw;
+            margin-top: 30vh;
+        }
+    
+        .underTitle-line {
+            z-index: 0;
+        }
+    }
+
+    .second-section-title {
+        margin-top: 20vh;
+    
+        .title-text {
+            text-align: center;
+            font-size: 40px;
+            color: white;
+    
+    
+        }
+    
+        .title-text-s {
+            text-align: center;
+            font-size: 40px;
+            background: #FFFFFF;
+            background: linear-gradient(to top right, #FFFFFF 52%, #FF0000 0%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    
+    
+        }
+    }
+    
+
+    .second-section {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(0, 0, 0);
+    }
+
+
+    .text {
+        color: white;
+        font-size: 3vw;
+        text-align: center;
+        line-height: 4vh;
+    }
+
+
+    .best-sellers {
+        margin-top: 30vh;
+        text-align: center;
+        font-weight: 600;
+        font-size:10vw;
+        background: #FFFFFF;
+        background: linear-gradient(to top right, #FFFFFF 50%, #FF0000 20%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+        img {
+            position: absolute;
+            top: 0%;
+            right: 0%;
+        }
+    }
+    
+
+    .third-section-imgCont {
+        margin-top: 10vh;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    
+        img {
+            width: 80%;
+        }
+    }
+    
+
+
+    .forth-section-title-cont {
+        text-align: center;
+        margin-top: 10vh;
+
+        img{
+            width: 80vw;
+        }
+    }
+
+
+    .listOfsnick1 {
+        position: relative;
+        margin-top: 10vh;
+        text-align: center;
+    
+        img {
+            width: 80%;
+        }
+    
+        p {
+            font-size: 5vw;
+            color: white;
+            margin-top: 3vh;
+        }
+    }
+    .listOfsnick2 {
+        position: relative;
+        margin-top: 10vh;
+        text-align: center;
+    
+        img {
+            width: 80%;
+        }
+    
+        p {
+            font-size: 5vw;
+            color: white;
+            margin-top: 3vh;
+        }
+    }
+    .listOfsnick3 {
+        position: relative;
+        margin-top: 10vh;
+        text-align: center;
+    
+        img {
+            width: 80%;
+        }
+    
+        p {
+            font-size: 5vw;
+            color: white;
+            margin-top: 3vh;
+        }
+    }
+
+
+    .fiveth-section-cont-secondPart {
+        .fiveth-section-title {
+            font-size: 4vw;
+            margin-top: 15vh;
+            color: white;
+        }
+    
+        p {
+            color: white;
+            margin-top: 5vh;
+            font-size: 1.5vw;
+        }
+    
+    
+        .btn-exoler {
+            margin-top: 5vh;
+            border-radius: 50px;
+            width: 15vw;
+            height: 10vh;
+            border: 1px solid white solid white;
+            color: white;
+            font-size: 1.5vw;
+    
+            &:hover {
+                img {
+                    margin-left: 5px;
+                    transition: 100ms ease;
+                    transform: scale(1.2);
+    
+                }
+            }
+    
+            &:not(:hover) {
+                img {
+                    margin-left: 0px;
+                    transition: 100ms ease;
+    
+                }
+            }
+    
+        }
+    }
 }

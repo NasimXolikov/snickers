@@ -48,11 +48,6 @@ ul, ul li {
 
 
 
-img, svg {
-	max-width: 100%;
-	height: auto;
-}
-
 address {
   font-style: normal;
 }
